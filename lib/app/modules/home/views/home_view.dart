@@ -18,7 +18,7 @@ class HomeView extends GetView<HomeController> {
         children: [
           const Center(
             child: Text(
-              'HomeView is working',
+              'Hi, I can change application theme',
               style: TextStyle(fontSize: 20),
             ),
           ),
@@ -26,14 +26,20 @@ class HomeView extends GetView<HomeController> {
             padding: const EdgeInsets.all(20.0),
             child: ElevatedButton(
                 onPressed: () {
+                  //use this statement to toggle theme
+                  //OPTIONS (Dark, Light)
+                  //All customized
+
                   if (controller.isDark.isFalse) {
+                    //Toggle Dark Theme
                     controller.changeThemeToDark();
                   } else {
+                    //Toggle Light Theme
                     controller.changeThemeToLight();
                   }
                 },
                 child: const Center(
-                  child: Text('Change Theme'),
+                  child: Text('Try me'),
                 )),
           )
         ],

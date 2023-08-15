@@ -6,7 +6,11 @@ ThemeData dark = ThemeData.dark().copyWith(
   appBarTheme: const AppBarTheme(
     backgroundColor: Color(0xff4f4f4f),
     elevation: 2,
-    titleTextStyle: TextStyle(color: Color(0xfff3f3f3), fontSize: 24),
+    titleTextStyle: TextStyle(
+      color: Color(0xfff3f3f3),
+      fontSize: 24,
+      fontWeight: FontWeight.w600,
+    ),
   ),
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
